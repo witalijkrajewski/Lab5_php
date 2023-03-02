@@ -1,5 +1,5 @@
 <?php
-function applyTrigonometricFunction($numbers, $functionName)
+function apply_trigonometric_function($numbers, $functionName)
 {
     $result = array();
     foreach ($numbers as $number) {
@@ -28,8 +28,8 @@ function applyTrigonometricFunction($numbers, $functionName)
 }
 
 $numbers = array(3, 0.5, 1);
-applyTrigonometricFunction($numbers, 'sin');
-applyTrigonometricFunction($numbers, 'cos');
-applyTrigonometricFunction($numbers, 'tg');
-applyTrigonometricFunction($numbers, 'ctg');
+apply_trigonometric_function($numbers, 'sin');
+apply_trigonometric_function($numbers, 'cos');
+apply_trigonometric_function($numbers, 'tg');
+apply_trigonometric_function($numbers, 'ctg');
 

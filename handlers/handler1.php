@@ -1,12 +1,12 @@
 <?php
-function makeList($array) {
-    $list = '<ul>';
+function make_list($array) {
+    $list_tag = '<ul>';
     foreach ($array as $item) {
-        $list .= '<li>' . $item . '</li>';
+        $list_tag .= '<li>' . $item . '</li>';
     }
-    $list .= '</ul>';
-    return $list;
+    $list_tag .= '</ul>';
+    return $list_tag;
 }
 
 $array = array("Item 1", "Item 2", "Item 3");
-echo makeList($array);
+echo make_list($array);
