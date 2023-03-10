@@ -22,7 +22,7 @@ function apply_trigonometric_function($numbers, $functionName)
     }
     echo '<ul>';
     foreach ($result as $value) {
-        echo '<li>' . $value . '</li>';
+        echo '<li>' . $functionName . '=' . $value . '</li>';
     }
     echo '</ul>';
 }
