@@ -14,6 +14,10 @@ function apply_trigonometric_function($numbers, $functionName)
                 $result[] = tan($number);
                 break;
             case 'ctg':
+                if ($number == 0) {
+                    $result[] = 'Division by zero error!';
+                    break;
+                }
                 $result[] = 1 / tan($number);
                 break;
             default:
@@ -27,7 +31,7 @@ function apply_trigonometric_function($numbers, $functionName)
     echo '</ul>';
 }
 
-$numbers = array(3, 0.5, 1);
+$numbers = array(3, 0, 1);
 apply_trigonometric_function($numbers, 'sin');
 apply_trigonometric_function($numbers, 'cos');
 apply_trigonometric_function($numbers, 'tg');
